@@ -45,5 +45,5 @@ document.addEventListener("DOMContentLoaded", function() {
         full_button.classList.add('clicked');
         half_button.classList.remove('clicked');
         updateCost();
-    });
+    });
 });
