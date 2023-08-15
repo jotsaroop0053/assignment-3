@@ -1,4 +1,4 @@
-/********* create variables *********/
+/**** create variables ****/
 const cost_per_day_full = 35;
 const cost_per_day_half = 20;
 let numberOfDaysSelected = 0;
@@ -8,12 +8,12 @@ const full_button = document.getElementById('full');
 const half_button = document.getElementById('half');
 const calculatedCostSpan = document.getElementById('calculated-cost');
 const clearbutton = document.getElementById('clear-button');
-/********* calculate *********/
+/**** calculate ****/
 document.addEventListener("DOMContentLoaded", function() {
     function updateCost() {
         calculatedCostSpan.textContent = dailyRate * numberOfDaysSelected;
     }
-    /********* colour change days of week *********/
+    /**** colour change days of week ****/
     day_selector_items.forEach(item => {
         item.addEventListener('click', function() {
             if (!item.classList.contains('clicked')) {

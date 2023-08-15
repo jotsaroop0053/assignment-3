@@ -4,11 +4,11 @@
 
 var SUBMITBUTTON = document.getElementById("submit-button");
 var contact = document.getElementById("contact-page");
-function thanks() {
+function thankyou() {
     contact.innerHTML = '';
     const output = document.createElement("p");
     output.innerHTML = "Thank you for your message!";
     output.style.fontSize = '24px';
     contact.append(output);
 }
-SUBMITBUTTON.addEventListener("click", thankyou);
+SUBMITBUTTON.addEventListener("click", thankyou);
